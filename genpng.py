@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 from PIL import Image, ImageDraw
 
@@ -25,4 +25,4 @@ def generate_pinhole_image(pinhole_diameter_mm, spacing_mm, image_size_mm):
     image.save('pinhole_image.png')
 
 # Example usage
-generate_pinhole_image(1.1, 3.5, (210, 297))
+generate_pinhole_image(1.1, 2.5, (210, 297))
