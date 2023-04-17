@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from PIL import Image, ImageDraw
 
 def generate_pinhole_image(pinhole_diameter_mm, spacing_mm, image_size_mm):
@@ -7,7 +9,7 @@ def generate_pinhole_image(pinhole_diameter_mm, spacing_mm, image_size_mm):
 
     # Calculate the size of the pinhole dots and spacing in pixels
     pinhole_diameter_pixels = round(dpi * pinhole_diameter_mm / 25.4)
-    spacing_pixels = round(dpi * spacing_mm / 25.4)
+    spacing_pixels = round(dpi * (spacing_mm + pinhole_diameter_mm) / 25.4)
 
     # Create a new image with a white background
     image = Image.new('RGB', image_size_pixels, 'white')
@@ -23,4 +25,4 @@ def generate_pinhole_image(pinhole_diameter_mm, spacing_mm, image_size_mm):
     image.save('pinhole_image.png')
 
 # Example usage
-generate_pinhole_image(1.1, 2.5, (210, 297))
+generate_pinhole_image(1.1, 3.5, (210, 297))
