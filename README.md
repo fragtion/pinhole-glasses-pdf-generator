@@ -1,6 +1,9 @@
 # pinhole-glasses-pdf-generator
 DIY Pinhole Glasses Template Generator
 
+So basically all this does is generate a template for the improvised "lenses" to be cut out from. The dot sizes and spacing can be customized.
+You will need your own frames, of course, and your own way of boring the holes. I used a small drill-bit. Others prefer a safety pin heated up with a lighter. You could probably also find a copper wire of suitable thickness and attach that to a conventional solering iron
+
 The bulk of this code was generated using OpenAI's ChatGPT, following my instructions of course
 
 ## Inspiration
